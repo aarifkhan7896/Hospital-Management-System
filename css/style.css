@@ -1,0 +1,502 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+:root {
+  --background-color: #eeeeee;
+}
+body {
+  background-color: var(--background-color);
+  color: #000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.top {
+  background-color: #fff;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.top h2 {
+  position: absolute;
+  right: 2.5rem;
+  display: inline-block;
+  font-size: 1.4rem;
+  animation: top 1s ease-in-out infinite;
+}
+@keyframes top {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.top span {
+  font-size: 1.7rem;
+}
+.fa-phone-alt {
+  font-size: 1.3rem;
+}
+.navbar {
+  background-color: #37c4d8;
+  height: 80px;
+}
+.navbar-brand {
+  font-size: 2.5rem;
+  padding: 0.5rem 2rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar ul {
+  display: flex;
+  right: 2rem;
+  position: relative;
+}
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.navbar ul li a:hover {
+  background-color: #d96c66;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.parallax {
+  background-image: url("../img/image1.jpg");
+  min-height: 580px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overlay {
+  position: absolute;
+  top: 4.3rem;
+  left: 0;
+  width: 100%;
+  height: 657px;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  opacity: 0.8;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.tagline h1 {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 15rem;
+  font-size: 4rem;
+  z-index: 2;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+.more {
+  background-image: url(../img/image4.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 220px;
+  background-repeat: no-repeat;
+}
+.more ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+}
+.more ul li {
+  padding: 5rem;
+}
+.more ul li a {
+  background-color: #fff;
+  border-radius: 1rem;
+  border: 2px solid #d64311;
+  padding: 1rem 9rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+.more ul li a:hover {
+  background-color: #d64311;
+  color: #fff;
+}
+.container-fluid {
+  background-color: #0a192f;
+  color: #fff;
+  height: 100%;
+  padding: 2rem;
+}
+.subscribe {
+  text-align: center;
+}
+.subscribe h1 {
+  font-size: 4rem;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+.subscribe span {
+  font-size: 2rem;
+}
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"] {
+  border: none;
+  border-bottom: 2px solid rgba(252, 252, 252, 0.9);
+  width: 300px;
+  height: 45px;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  border-bottom: 2px solid rgba(252, 252, 252, 0.9);
+  outline: none;
+}
+.btn-outline-success {
+  font-size: 1.5rem;
+  padding: 0.5rem 3rem;
+}
+.icons {
+  text-align: center;
+}
+.icons ul {
+  display: flex;
+  justify-content: center;
+}
+.icons ul li {
+  padding: 1rem;
+}
+.icons ul li a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1.2rem;
+  transition: all 0.2s ease-in-out;
+}
+.icons ul li:hover {
+  transform: translateY(-0.1rem);
+}
+.icons ul li a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.otherlinks {
+  padding: 0 2rem;
+}
+.otherlinks h1 {
+  position: relative;
+  left: 2rem;
+}
+.otherlinks p {
+  font-size: 1.5rem;
+  color: grey;
+  position: relative;
+  left: 2rem;
+}
+.otherlinks ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.otherlinks ul li {
+  padding: 1rem;
+}
+.otherlinks ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: gray;
+  transition: all 0.1s ease-in-out;
+}
+.otherlinks ul li a:hover {
+  color: #d96c66;
+}
+.otherlinks ul li:hover {
+  transform: translateX(0.2rem);
+}
+.footer {
+  background-color: #000;
+  color: grey;
+  height: 4rem;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.adminlogin {
+  background-color: #0a192f;
+  color: #fff;
+  position: absolute;
+  top: 15rem;
+  left: 33%;
+  padding: 5rem 3rem;
+  border-radius: 2rem;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+.adminbg {
+  background-image: url("../img/image2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 65rem;
+  background-repeat: no-repeat;
+}
+.overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
+  z-index: 1;
+}
+.adminlogin h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  text-decoration: underline;
+}
+.adminlogin form {
+  padding-top: 3rem;
+}
+.adminlogin button {
+  width: 69%;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.adminlogin p {
+  font-size: 1.5rem;
+}
+.covid {
+  padding: 5rem 3rem;
+}
+.covid h1 {
+  text-decoration: underline;
+  text-align: center;
+}
+#image3 {
+  position: relative;
+  top: 18rem;
+  text-align: center;
+}
+.responsive {
+  width: 25rem;
+  height: 25rem;
+  transition: all 1s linear;
+}
+.responsive:hover {
+  transform: rotate(30deg);
+}
+
+.covidsafety {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #d96c66;
+  color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  padding: 1rem 0;
+}
+.covidsafety h2:hover {
+  text-decoration: underline;
+  color: #ebf2fc;
+}
+.dparagraph {
+  display: none;
+}
+.hsparagraph {
+  display: none;
+}
+.covidparagraph {
+  background-color: #fff;
+  margin: 2rem 0;
+  padding: 5rem 2rem;
+  border-radius: 1rem;
+  border: 1px solid grey;
+  font-size: 1.5rem;
+  height: 40rem;
+}
+.covidparagraph p {
+  text-align: justify;
+  color: #0a192f;
+  font-weight: 500;
+}
+.parallax-3 {
+  background-image: url(../img/image5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 25rem;
+  /* box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4); */
+}
+.overlay-3 {
+  position: absolute;
+  top: 12rem;
+  left: 0;
+  width: 100%;
+  height: 25rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  opacity: 0.8;
+}
+.parallax-3 h1 {
+  font-size: 5rem;
+  position: relative;
+  top: 7rem;
+}
+.hline {
+  border-bottom: 3px solid #d96c66;
+  width: 10rem;
+  margin: auto;
+}
+.question {
+  padding: 5rem 0;
+}
+.fa-phone,
+.fa-envelope,
+.fa-map-marker-alt {
+  color: dodgerblue;
+}
+.contactform {
+  padding: 5rem 0;
+}
+.formcontact {
+  padding: 6rem 2rem;
+  background-color: #0a192f;
+  border-radius: 2rem;
+  width: 50%;
+  margin: auto;
+  margin-top: 5rem;
+}
+.formcontact label {
+  font-size: 2rem;
+  color: #fff;
+}
+.formcontact button {
+  padding: 1rem 8rem;
+  font-size: 1.5rem;
+}
+#textHelp {
+  font-size: 1.1rem;
+}
+@media only screen and (max-width: 998px) {
+  html {
+    font-size: 50%;
+  }
+  .more ul li {
+    padding: 3rem;
+  }
+  .more ul li a {
+    padding: 1rem 9rem;
+  }
+  .parallax {
+    width: 100%;
+    height: auto;
+  }
+  .responsive {
+    position: relative;
+    top: 5rem;
+  }
+  .adminlogin input[type="text"] {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 770px) {
+  html {
+    font-size: 45%;
+  }
+  .more ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .responsive {
+    position: relative;
+    top: 5rem;
+  }
+  .formcontact {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
+  .responsive {
+    display: none;
+  }
+  .adminlogin {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 320px) {
+  input[type="text"] {
+    height: auto;
+    width: auto;
+  }
+  html {
+    font-size: 25%;
+  }
+  .tagline {
+    text-align: center;
+  }
+  .more ul li a {
+    padding: 1rem 9rem;
+    font-size: 2rem;
+  }
+  .more {
+    height: 150px;
+  }
+}
+@media only screen and (max-width: 202px) {
+  .covidparagraph p {
+    font-size: 1.1rem;
+  }
+  .navbar ul {
+    flex-direction: column;
+  }
+  .tagline h1 {
+    position: relative;
+    top: 35rem;
+  }
+}

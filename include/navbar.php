@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Navbar</title>
+    <title>Life-Line Hospital</title>
 </head>
 
 <body>
@@ -20,8 +20,8 @@
     <div class="navbar sticky-top">
         <h1 class="navbar-brand">Life-Line Hospital</h1>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="aboutus.php">About Us</a></li>
             <li><a href="#">Our Specialities</a></li>
             <li><a href="contactus.php">Contact Us</a></li>
             <li><a href="adminlogin.php">Login</a></li>

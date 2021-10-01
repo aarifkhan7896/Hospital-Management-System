@@ -1,3 +1,21 @@
+<?php
+$submitted = false;
+include 'include/dbcon.php'; 
+if($_SERVER['REQUEST_METHOD']=="POST"){
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $phone = $_POST['phone'];
+    $message = $_POST['message'];
+
+    $sql = "INSERT INTO `contactus` (`name`, `email`, `subject`, `phone`, `message`) VALUES ('$name', '$email', '$subject', '$phone', '$message')";
+    $result = mysqli_query($dbcon,$sql);
+    if($result) {
+        $submitted = true;
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +26,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Navbar</title>
+    <title>Life-Line Hospital</title>
 </head>
 
 <body>
@@ -69,6 +87,11 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+        <?php
+        if($submitted){
+            echo "<h3 class='text-success fw-bold text-center py-5' >Thank you for contacting us, we will get back to you as soon as possible.</h3>";
+        }
+        ?>
     </div>
     <?php include 'include/footer.php'; ?>
     <script src="js/jquery.min.js"></script>

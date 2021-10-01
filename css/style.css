@@ -414,6 +414,39 @@ input[type="email"]:focus {
 #textHelp {
   font-size: 1.1rem;
 }
+.h-line {
+  border-bottom: 2px solid #37c4d8;
+  width: 12rem;
+}
+#aboutus span {
+  font-size: 2.5rem;
+}
+#aboutus h3 {
+  text-align: justify;
+}
+.aboutbox {
+  position: relative;
+  top: 16rem;
+  margin-left: 2rem;
+}
+.aboutbox ul li {
+  padding: 2rem;
+}
+.aboutbox ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #d64311;
+  background-color: #ebf2fc;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+  border: 1px solid #d64311;
+}
+.aboutbox ul li a:hover {
+  background-color: #d64311;
+  color: #fff;
+}
 @media only screen and (max-width: 998px) {
   html {
     font-size: 50%;
@@ -453,6 +486,11 @@ input[type="email"]:focus {
   .formcontact {
     width: 100%;
     height: auto;
+  }
+  .aboutbox {
+    position: relative;
+    top: 0;
+    padding-bottom: 3rem;
   }
 }
 @media only screen and (max-width: 600px) {

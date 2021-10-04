@@ -15,6 +15,7 @@ body {
   background-color: var(--background-color);
   color: #000;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
 }
 .top {
   background-color: #fff;
@@ -160,7 +161,8 @@ body {
 input[type="text"],
 input[type="password"],
 input[type="number"],
-input[type="email"] {
+input[type="email"],
+input[type="date"] {
   border: none;
   border-bottom: 2px solid rgba(252, 252, 252, 0.9);
   width: 300px;
@@ -173,7 +175,8 @@ input[type="email"] {
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="number"]:focus,
-input[type="email"]:focus {
+input[type="email"]:focus,
+input[type="date"]:focus {
   background-color: transparent;
   border: none;
   color: #fff;
@@ -446,6 +449,101 @@ input[type="email"]:focus {
 .aboutbox ul li a:hover {
   background-color: #d64311;
   color: #fff;
+}
+#aboutus ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#aboutlist {
+  border-radius: 2rem;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+  padding: 3rem 0;
+  color: #fff;
+  background-color: #39a7a7;
+}
+#aboutlist h2 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+#aboutlist p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ebf2fc;
+}
+#aboutlist .fa-hand-holding-medical,
+.fa-clinic-medical,
+.fa-bed,
+.fa-users {
+  font-size: 2.5rem;
+  margin: 0 1rem;
+}
+#aboutlist h1 {
+  font-size: 3.5rem;
+  text-decoration: underline;
+}
+.sidebar {
+  padding: 0 1.5rem;
+  background-color: #0a192f;
+  color: #fff;
+  height: 656px;
+  width: 100%;
+}
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.sidebar ul li a:hover {
+  color: #d96c66;
+}
+.admindash {
+  margin: 6rem;
+}
+.admindash .card {
+  width: 30rem;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  text-align: center;
+  font-size: 2.2rem;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
+  border-radius: 2rem;
+}
+.admindash .fa-users,
+.fa-question-circle,
+.fa-user-injured,
+.fa-calendar-check {
+  font-size: 5rem;
+  color: dodgerblue;
+}
+.admindash a {
+  text-decoration: none;
+  color: #0a192f;
+}
+.admindash a:hover {
+  color: #d96c66;
+}
+.lines {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  top: 0px;
+}
+.lines .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+}
+.managedoctors {
+  padding: 5rem 0;
+}
+#table {
+  font-size: 1.6rem;
+  cursor: pointer;
+  text-align: center;
 }
 @media only screen and (max-width: 998px) {
   html {

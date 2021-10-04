@@ -45,7 +45,7 @@
                     <h1 class="mb-5">Other Links</h1>
                     <ul>
                         <li><a href="#">Career</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="aboutus.php">About</a></li>
                         <li><a href="#">Sitemap</a></li>
                     </ul>
                 </div>
@@ -56,7 +56,7 @@
                     <ul>
                         <li><a href="#">Find A Doctor</a></li>
                         <li><a href="#">Ambulance</a></li>
-                        <li><a href="#">Book an Appointment</a></li>
+                        <li><a href="appointment.php">Book an Appointment</a></li>
                     </ul>
                 </div>
             </div>
